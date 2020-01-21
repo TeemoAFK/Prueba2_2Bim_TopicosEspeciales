@@ -1,3 +1,25 @@
+
+  <div *ngIf="showSplash" class="splash">
+    <div class="spinner">
+      <div class="dot1"></div>
+      <div class="dot2"></div>
+    </div>
+  </div>
+
 <ion-app>
   <ion-router-outlet></ion-router-outlet>
 </ion-app>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button routerLinkActive="tab-selected" routerLink="/home" class="ios" tab="home">
+      <ion-icon name="paw"></ion-icon>
+      <ion-label>Lista de Mascotas</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button routerLinkActive="tab-selected" routerLink="/make-appointment" class="ios" tab="make-appointment">
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <ion-label>Agregar nuevo</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

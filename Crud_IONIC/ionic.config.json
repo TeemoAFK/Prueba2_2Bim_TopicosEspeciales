@@ -1,5 +1,7 @@
 {
-  "name": "Crud_IONIC",
-  "integrations": {},
+  "name": "ionic-firebase-setup",
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
